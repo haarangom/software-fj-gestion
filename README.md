@@ -24,6 +24,8 @@ Es un programa en Python, sin base de datos, que maneja clientes, servicios y re
 | `reserva.py` | Clase `Reserva` con confirmar, cancelar y procesar |
 | `main.py` | Programa principal con 17 simulaciones (válidas e inválidas) |
 | `probar_*.py` | Pruebas rápidas de cada parte |
+| `test_cliente.py` | 5 pruebas automáticas (`unittest`) de la clase `Cliente` |
+| `test_servicios.py` | 10 pruebas automáticas (`unittest`) de los tres servicios |
 
 ## Conceptos de programación orientada a objetos que se usan
 - **Abstracción:** `Entidad` y `Servicio` son clases abstractas, no se pueden crear directamente.
@@ -47,6 +49,12 @@ python main.py
 
 Al final se muestra un resumen: cuántas simulaciones fueron exitosas, cuántas tuvieron error controlado y dónde quedó el log.
 
+Para correr las pruebas automáticas (15 en total):
+
+```
+python -m unittest discover -v
+```
+
 ## Trabajo en equipo
 Cada integrante trabaja en su propia rama y envía sus cambios con un *pull request*. Las tareas están en los **Issues** del repositorio.
 
@@ -57,5 +65,4 @@ Cada integrante trabaja en su propia rama y envía sus cambios con un *pull requ
 | Servicio y servicios especializados | Héctor Andrés Arango Murcia |
 | Reserva | Héctor Andrés Arango Murcia |
 | Simulaciones, README y PDF | Héctor Andrés Arango Murcia |
-
-> Si algún compañero se une, se actualiza esta tabla.
+| Pruebas automáticas de Cliente y Servicios | Erik Santiago Cutiva Mazabel |
